@@ -22,30 +22,30 @@ import org.joda.time._
 object StaticInterval extends StaticInterval
 
 trait StaticInterval {
-  def thisSecond = StaticDateTime.now.second.interval
-  def thisMinute = StaticDateTime.now.minute.interval
-  def thisHour   = StaticDateTime.now.hour.interval
-  def thisDay    = StaticDateTime.now.day.interval
-  def today      = StaticDateTime.now.day.interval
-  def thisWeek   = StaticDateTime.now.week.interval
-  def thisMonth  = StaticDateTime.now.month.interval
-  def thisYear   = StaticDateTime.now.year.interval
+  def thisSecond = StaticDateTime.now.second.toInterval
+  def thisMinute = StaticDateTime.now.minute.toInterval
+  def thisHour   = StaticDateTime.now.hour.toInterval
+  def thisDay    = StaticDateTime.now.day.toInterval
+  def today      = StaticDateTime.now.day.toInterval
+  def thisWeek   = StaticDateTime.now.week.toInterval
+  def thisMonth  = StaticDateTime.now.month.toInterval
+  def thisYear   = StaticDateTime.now.year.toInterval
 
-  def nextSecond = StaticDateTime.nextSecond.second.interval
-  def nextMinute = StaticDateTime.nextMinute.minute.interval
-  def nextHour   = StaticDateTime.nextHour.hour.interval
-  def nextDay    = StaticDateTime.nextDay.day.interval
-  def tomorrow   = StaticDateTime.nextDay.day.interval
-  def nextWeek   = StaticDateTime.nextWeek.week.interval
-  def nextMonth  = StaticDateTime.nextMonth.month.interval
-  def nextYear   = StaticDateTime.nextYear.year.interval
+  def nextSecond = StaticDateTime.nextSecond.second.toInterval
+  def nextMinute = StaticDateTime.nextMinute.minute.toInterval
+  def nextHour   = StaticDateTime.nextHour.hour.toInterval
+  def nextDay    = StaticDateTime.nextDay.day.toInterval
+  def tomorrow   = StaticDateTime.nextDay.day.toInterval
+  def nextWeek   = StaticDateTime.nextWeek.week.toInterval
+  def nextMonth  = StaticDateTime.nextMonth.month.toInterval
+  def nextYear   = StaticDateTime.nextYear.year.toInterval
 
-  def lastSecond = StaticDateTime.lastSecond.second.interval
-  def lastMinute = StaticDateTime.lastMinute.minute.interval
-  def lastHour   = StaticDateTime.lastHour.hour.interval
-  def lastDay    = StaticDateTime.lastDay.day.interval
-  def yesterday  = StaticDateTime.lastDay.day.interval
-  def lastWeek   = StaticDateTime.lastWeek.week.interval
-  def lastMonth  = StaticDateTime.lastMonth.month.interval
-  def lastYear   = StaticDateTime.lastYear.year.interval
+  def lastSecond = StaticDateTime.lastSecond.second.toInterval
+  def lastMinute = StaticDateTime.lastMinute.minute.toInterval
+  def lastHour   = StaticDateTime.lastHour.hour.toInterval
+  def lastDay    = StaticDateTime.lastDay.day.toInterval
+  def yesterday  = StaticDateTime.lastDay.day.toInterval
+  def lastWeek   = StaticDateTime.lastWeek.week.toInterval
+  def lastMonth  = StaticDateTime.lastMonth.month.toInterval
+  def lastYear   = StaticDateTime.lastYear.year.toInterval
 }

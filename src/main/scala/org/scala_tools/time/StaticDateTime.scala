@@ -25,6 +25,7 @@ trait StaticDateTime {
   type Property = DateTime.Property
 
   def now        = new DateTime
+  def now(tz: DateTimeZone) = new DateTime(tz)
 
   def nextSecond = now + 1.second
   def nextMinute = now + 1.minute

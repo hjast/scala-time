@@ -19,6 +19,8 @@ package org.scala_tools.time
 import org.joda.time._
 
 class RichDateTime(underlying: DateTime) {
+
+
   def -(duration: Long): DateTime =
     underlying.minus(duration)
   def -(duration: ReadableDuration): DateTime =
@@ -55,4 +57,6 @@ class RichDateTime(underlying: DateTime) {
   def withYear(year: Int) = underlying.withYear(year)
   def withCentury(century: Int) = underlying.withCenturyOfEra(century)
   def withEra(era: Int) = underlying.withEra(era)
+
+ // def withUTC = underlying.withZone(DateTimeZone.UTC)
 }
